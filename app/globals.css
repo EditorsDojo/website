@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-primary: #FFF6E8;
+  --color-bg-secondary: #F7F0E2;
+  --color-gold: #B8892F;
+  --color-dark: #121212;
+  --color-text-body: #222222;
+  --color-text-muted: #777777;
+  --color-border: #E6DCCB;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-body);
+}
+
+.ed-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ed-button-primary {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+}
+
+.ed-button-primary:hover {
+  background-color: var(--color-gold);
+  color: white;
+}
